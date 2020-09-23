@@ -14,3 +14,21 @@ class StateMachine:
 
     Detailed flow chart to be added later.
     """
+
+    def __init__(self, initial_state):
+        """
+        Initialize the state machine.
+        """
+        self.state = initial_state
+
+    def run(self, gui):
+        """
+        Run through the states of the state machine.
+
+        :param gui:
+        :return:
+        """
+
+        while self.state is not None:
+            print("Changing state.")
+            self.state = self.state.run(gui)
