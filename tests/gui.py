@@ -6,6 +6,7 @@ This Python file contains the tests for the gui.
 
 '''Imports'''
 import tkinter as tk
+from tkinterdnd2 import *
 from tkinter.font import Font
 from fsm.states import BaseState
 from fsm import StateMachine
@@ -208,5 +209,122 @@ def first_window_attempt():
     state_machine = StateMachine(initial_state=InitialState())
     state_machine.run(gui)
 
+def drag_and_drop_attempt():
+    """
+        The first attempt at creating a gui.
 
-first_window_attempt()
+        :return None:
+        """
+
+    class InitialState(BaseState):
+        """
+        Initial state for the SimpleGUI.
+        """
+
+        def _on_enter(self, gui):
+            """
+            Construct the buttons upon entering the state.
+
+            :return:
+            """
+            print("In initial state.")
+
+            '''Create drag and drop window'''
+            gui.entry_sv = tk.StringVar()
+            gui.entry = tk.Entry(gui.root, textvar=gui.entry_sv, width=80)
+            gui.entry.pack(fill=tk.X)
+            gui.entry.drop_target_register(DND_FILES)
+            gui.entry.dnd_bind('<<Drop>>', self.drop(gui))
+            gui.update()
+
+        def _on_exit(self, gui):
+            """
+            Return the next state.
+
+            :param gui:
+            :return:
+            """
+            gui.update()
+            return WaitForDrop()
+
+        def drop(self, gui):
+            def _drop(event):
+                gui.entry_sv.set(event.data)
+            return _drop
+
+    class WaitForDrop(BaseState):
+        """
+        State for having buttons on.
+        """
+
+        def _on_enter(self, gui):
+            """
+
+            :param gui:
+            :return:
+            """
+            print("In wait for drop state.")
+
+        def _state_main(self, gui):
+            """
+            The main code for the ButtonsOn state.
+
+            :param gui:
+            :return:
+            """
+            gui.entry.wait_variable(gui.entry_sv)
+
+        def _on_exit(self, gui):
+            if gui.program_running:
+                gui.update()
+                return WaitForDrop()
+            else:
+                return None
+
+    class DragAndDropGUI:
+        """
+        Object for a simple gui.
+        """
+
+        def __init__(self, root):
+            """
+            Initializing the SimpleGUI object.
+            """
+            self.root = root
+            w, h = root.winfo_screenwidth(), self.root.winfo_screenheight()
+            self.root.geometry("%dx%d+0+0" % (w, h))
+            self.root.protocol("WM_DELETE_WINDOW", self.end_program)
+            self.program_running = True
+
+        def update(self):
+            """
+            Update the GUI.
+
+            :return:
+            """
+            self.root.update_idletasks()
+            self.root.update()
+            return self.root
+
+        def end_program(self):
+            """
+            Ends the program.
+
+            :return:
+            """
+            if self.entry_sv.get() != " ":
+                self.entry_sv.set(" ")
+            else:
+                self.entry_sv.set("!")
+            self.root.destroy()
+            self.program_running = False
+
+    '''Initialize and run GUI object'''
+    root = TkinterDnD.Tk()
+    # Maximize window while maintaining title bar
+    gui = DragAndDropGUI(root)
+    state_machine = StateMachine(initial_state=InitialState())
+    state_machine.run(gui)
+
+
+drag_and_drop_attempt()
