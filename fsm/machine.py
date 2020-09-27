@@ -30,5 +30,4 @@ class StateMachine:
         """
 
         while self.state is not None:
-            print("Changing state.")
             self.state = self.state.run(gui)

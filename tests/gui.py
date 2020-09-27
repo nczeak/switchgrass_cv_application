@@ -6,7 +6,8 @@ This Python file contains the tests for the gui.
 
 '''Imports'''
 import tkinter as tk
-from tkinterdnd2 import *
+import tkinterdnd2
+from tkinterdnd2 import DND_FILES
 from tkinter.font import Font
 from fsm.states import BaseState
 from fsm import StateMachine
@@ -320,7 +321,7 @@ def drag_and_drop_attempt():
             self.program_running = False
 
     '''Initialize and run GUI object'''
-    root = TkinterDnD.Tk()
+    root = tkinterdnd2.Tk()
     # Maximize window while maintaining title bar
     gui = DragAndDropGUI(root)
     state_machine = StateMachine(initial_state=InitialState())
