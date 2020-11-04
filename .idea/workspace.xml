@@ -1,6 +1,189 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="537a8c8f-f63c-469a-a1de-801cb1001254" name="Default Changelist" comment="Added TkinterDnD2 hook back to build_materials">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/gui.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1h5du6r8YHMJZjZvMw9OcoJ9zcD" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.general" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../kaggle-big-data-bowl-2019-nczeak" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/fsm" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="gui" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="switchgrass_cv_application" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/gui.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.gui" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="537a8c8f-f63c-469a-a1de-801cb1001254" name="Default Changelist" comment="" />
+      <created>1599305106830</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599305106830</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Initial layout of project structure">
+      <created>1599317089470</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1599317089470</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Created simple test GUI">
+      <created>1600794899060</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1600794899060</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Fitted FSM with simple GUI">
+      <created>1600881288006</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1600881288006</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Created simple drag and drop GUI">
+      <created>1600949656028</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1600949656028</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Prepping for first port to Windows">
+      <created>1601234500849</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1601234500849</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added TkinterDnD2 hook back to build_materials">
+      <created>1601237223443</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1601237223443</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial layout of project structure" />
+    <MESSAGE value="Created simple test GUI" />
+    <MESSAGE value="Fitted FSM with simple GUI" />
+    <MESSAGE value="Created simple drag and drop GUI" />
+    <MESSAGE value="Prepping for first port to Windows" />
+    <MESSAGE value="Added TkinterDnD2 hook back to build_materials" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added TkinterDnD2 hook back to build_materials" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2451" y="863" key="FileChooserDialogImpl" timestamp="1600083664425">
+      <screen x="0" y="56" width="3840" height="2344" />
+    </state>
+    <state x="2451" y="863" key="FileChooserDialogImpl/0.56.3840.2344@0.56.3840.2344" timestamp="1600083664425" />
+    <state width="1871" height="509" key="GridCell.Tab.0.bottom" timestamp="1604493848895">
+      <screen x="0" y="56" width="3840" height="2344" />
+    </state>
+    <state width="1871" height="509" key="GridCell.Tab.0.bottom/0.56.3840.2344@0.56.3840.2344" timestamp="1604493848895" />
+    <state width="1871" height="509" key="GridCell.Tab.0.center" timestamp="1604493848895">
+      <screen x="0" y="56" width="3840" height="2344" />
+    </state>
+    <state width="1871" height="509" key="GridCell.Tab.0.center/0.56.3840.2344@0.56.3840.2344" timestamp="1604493848895" />
+    <state width="1871" height="509" key="GridCell.Tab.0.left" timestamp="1604493848895">
+      <screen x="0" y="56" width="3840" height="2344" />
+    </state>
+    <state width="1871" height="509" key="GridCell.Tab.0.left/0.56.3840.2344@0.56.3840.2344" timestamp="1604493848895" />
+    <state width="1871" height="509" key="GridCell.Tab.0.right" timestamp="1604493848895">
+      <screen x="0" y="56" width="3840" height="2344" />
+    </state>
+    <state width="1871" height="509" key="GridCell.Tab.0.right/0.56.3840.2344@0.56.3840.2344" timestamp="1604493848895" />
+    <state x="1163" y="451" width="1859" height="1257" key="SettingsEditor" timestamp="1600956871245">
+      <screen x="0" y="56" width="3840" height="2344" />
+    </state>
+    <state x="1163" y="451" width="1859" height="1257" key="SettingsEditor/0.56.3840.2344@0.56.3840.2344" timestamp="1600956871245" />
+    <state x="1217" y="973" width="1402" height="905" key="Vcs.Push.Dialog.v2" timestamp="1601237225347">
+      <screen x="0" y="56" width="3840" height="2344" />
+    </state>
+    <state x="1217" y="973" width="1402" height="905" key="Vcs.Push.Dialog.v2/0.56.3840.2344@0.56.3840.2344" timestamp="1601237225347" />
   </component>
 </project>

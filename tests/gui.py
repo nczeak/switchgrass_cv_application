@@ -12,6 +12,8 @@ from tkinter.font import Font
 from fsm.states import BaseState
 from fsm import StateMachine
 import sys
+from PIL import ImageTk, Image
+from ast import literal_eval
 
 
 def first_window_attempt():
@@ -232,8 +234,14 @@ def drag_and_drop_attempt():
 
             '''Create drag and drop window'''
             gui.entry_sv = tk.StringVar()
-            gui.entry = tk.Entry(gui.root, textvar=gui.entry_sv, width=80)
-            gui.entry.pack(fill=tk.X)
+            gui.drop_box_list = []
+            gui.drop_box_items = tk.Listbox(master=gui.root, listvariable=gui.drop_box_list)
+            gui.drop_box_text = tk.StringVar()
+            gui.drop_box_text.set("Drop images here")
+            gui.entry = tk.Entry(gui.root, textvar=gui.drop_box_text, justify='center')
+            gui.entry.config(font=("Courier", 44))
+            gui.entry.place(x = 200, y=200, width=800, height=800)
+            #gui.entry.pack()
             gui.entry.drop_target_register(DND_FILES)
             gui.entry.dnd_bind('<<Drop>>', self.drop(gui))
             gui.update()
@@ -250,7 +258,8 @@ def drag_and_drop_attempt():
 
         def drop(self, gui):
             def _drop(event):
-                gui.entry_sv.set(event.data)
+                files = root.tk.splitlist(event.data)
+                gui.entry_sv.set(files)
             return _drop
 
     class WaitForDrop(BaseState):
@@ -274,6 +283,25 @@ def drag_and_drop_attempt():
             :return:
             """
             gui.entry.wait_variable(gui.entry_sv)
+
+            '''Clean string'''
+            files = literal_eval(gui.entry_sv.get())
+
+            '''Remove previous images'''
+            if hasattr(gui, "panel"):
+                gui.panel.destroy()
+
+            '''Load each image'''
+            for file_name in files:
+                file_name = file_name.replace("{", "").replace("}", "")
+                # image = tk.PhotoImage(file=file_name)
+                image = Image.open(file_name)
+                image = image.resize((500, 500), Image.ANTIALIAS)
+                image = ImageTk.PhotoImage(image)
+                gui.panel = tk.Label(gui.root, image=image)
+                gui.panel.image = image
+                gui.panel.pack()
+                # panel.grid(row=2)
 
         def _on_exit(self, gui):
             if gui.program_running:
@@ -329,3 +357,12 @@ def drag_and_drop_attempt():
 
 
 drag_and_drop_attempt()
+
+'''root = tkinterdnd2.Tk()
+
+img = tk.PhotoImage(file="/home/nczeak/Downloads/Simple Space Wallpaper (16_10).png")
+
+label = tk.Label(root, image=img)
+label.pack()
+
+root.mainloop()'''
