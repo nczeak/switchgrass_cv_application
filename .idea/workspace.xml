@@ -19,10 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="537a8c8f-f63c-469a-a1de-801cb1001254" name="Default Changelist" comment="Added a way to display pictures">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/gui.py" afterDir="false" />
-    </list>
+    <list default="true" id="537a8c8f-f63c-469a-a1de-801cb1001254" name="Default Changelist" comment="Made final cuts" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -139,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604498061569</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Made final cuts">
+      <created>1607009778515</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1607009778516</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -162,6 +166,7 @@
     <MESSAGE value="Prepping for first port to Windows" />
     <MESSAGE value="Added TkinterDnD2 hook back to build_materials" />
     <MESSAGE value="Added a way to display pictures" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a way to display pictures" />
+    <MESSAGE value="Made final cuts" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made final cuts" />
   </component>
 </project>
