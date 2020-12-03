@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="537a8c8f-f63c-469a-a1de-801cb1001254" name="Default Changelist" comment="Added TkinterDnD2 hook back to build_materials">
+    <list default="true" id="537a8c8f-f63c-469a-a1de-801cb1001254" name="Default Changelist" comment="Added a way to display pictures">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/gui.py" afterDir="false" />
     </list>
@@ -132,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601237223443</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added a way to display pictures">
+      <created>1604498061569</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1604498061569</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -154,36 +161,7 @@
     <MESSAGE value="Created simple drag and drop GUI" />
     <MESSAGE value="Prepping for first port to Windows" />
     <MESSAGE value="Added TkinterDnD2 hook back to build_materials" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added TkinterDnD2 hook back to build_materials" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="2451" y="863" key="FileChooserDialogImpl" timestamp="1600083664425">
-      <screen x="0" y="56" width="3840" height="2344" />
-    </state>
-    <state x="2451" y="863" key="FileChooserDialogImpl/0.56.3840.2344@0.56.3840.2344" timestamp="1600083664425" />
-    <state width="1871" height="509" key="GridCell.Tab.0.bottom" timestamp="1604493848895">
-      <screen x="0" y="56" width="3840" height="2344" />
-    </state>
-    <state width="1871" height="509" key="GridCell.Tab.0.bottom/0.56.3840.2344@0.56.3840.2344" timestamp="1604493848895" />
-    <state width="1871" height="509" key="GridCell.Tab.0.center" timestamp="1604493848895">
-      <screen x="0" y="56" width="3840" height="2344" />
-    </state>
-    <state width="1871" height="509" key="GridCell.Tab.0.center/0.56.3840.2344@0.56.3840.2344" timestamp="1604493848895" />
-    <state width="1871" height="509" key="GridCell.Tab.0.left" timestamp="1604493848895">
-      <screen x="0" y="56" width="3840" height="2344" />
-    </state>
-    <state width="1871" height="509" key="GridCell.Tab.0.left/0.56.3840.2344@0.56.3840.2344" timestamp="1604493848895" />
-    <state width="1871" height="509" key="GridCell.Tab.0.right" timestamp="1604493848895">
-      <screen x="0" y="56" width="3840" height="2344" />
-    </state>
-    <state width="1871" height="509" key="GridCell.Tab.0.right/0.56.3840.2344@0.56.3840.2344" timestamp="1604493848895" />
-    <state x="1163" y="451" width="1859" height="1257" key="SettingsEditor" timestamp="1600956871245">
-      <screen x="0" y="56" width="3840" height="2344" />
-    </state>
-    <state x="1163" y="451" width="1859" height="1257" key="SettingsEditor/0.56.3840.2344@0.56.3840.2344" timestamp="1600956871245" />
-    <state x="1217" y="973" width="1402" height="905" key="Vcs.Push.Dialog.v2" timestamp="1601237225347">
-      <screen x="0" y="56" width="3840" height="2344" />
-    </state>
-    <state x="1217" y="973" width="1402" height="905" key="Vcs.Push.Dialog.v2/0.56.3840.2344@0.56.3840.2344" timestamp="1601237225347" />
+    <MESSAGE value="Added a way to display pictures" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a way to display pictures" />
   </component>
 </project>
